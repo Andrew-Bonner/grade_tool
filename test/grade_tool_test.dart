@@ -1,10 +1,11 @@
+import 'package:grade_tool_resubmission/grade_tool.dart';
 import 'package:test/test.dart';
 
 void main() {
   test(('100 is an A'), () {
     int percent = 100;
-    final converter = GradeConverter();
-    String letter = converter.changePercentToLetter(percent);
+    final gradeTool = GradeConverter();
+    String letter = gradeTool.convertPercentToLetter(percent);
     expect(letter, 'A');
   });
 }
