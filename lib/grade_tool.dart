@@ -10,6 +10,10 @@ class GradeConverter {
         letter = 'C';
       case >= 60 && < 70:
         letter = 'D';
+      case >= 0 && < 60:
+        letter = 'F';
+      case < 0:
+        letter = 'No letter applicable';
     }
     return letter;
   }

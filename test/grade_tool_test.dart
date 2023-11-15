@@ -15,7 +15,7 @@ void main() {
     expect(letter, 'B');
   });
   test(('-1 is not a grade'), () {
-    int percent = 100;
+    int percent = -1;
     final gradeTool = GradeConverter();
     String letter = gradeTool.convertPercentToLetter(percent);
     expect(letter, 'No letter applicable');
