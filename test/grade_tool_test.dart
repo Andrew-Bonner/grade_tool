@@ -20,4 +20,10 @@ void main() {
     String letter = gradeTool.convertPercentToLetter(percent);
     expect(letter, 'No letter applicable');
   });
+  test(('112 is an A'), () {
+    int percent = 112;
+    final gradeTool = GradeConverter();
+    String letter = gradeTool.convertPercentToLetter(percent);
+    expect(letter, 'A');
+  });
 }
